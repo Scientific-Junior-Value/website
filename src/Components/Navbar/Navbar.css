@@ -52,6 +52,7 @@
 }
 
 .navbar-links ul li:hover .drop-line{
+  transform: rotate(-45deg);
   background-color: #5FAB30;
   transition: background-color 0.25s ease-in-out;
 }

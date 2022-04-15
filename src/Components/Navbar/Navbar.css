@@ -35,7 +35,7 @@
 }
 
 .navbar-links ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   list-style: none;
 }
 
@@ -50,9 +50,14 @@
   transition: color 0.25s ease-in-out;
 }
 
+.navbar-links ul li:hover .drop-line{
+  background-color: #5FAB30;
+  transition: background-color 0.25s ease-in-out;
+}
+
 .drop-line {
   margin-left: 0.5rem;
   height: 2px;
   min-width: 12px;
-  background-color: white;
+  background-color: #fff;
 }

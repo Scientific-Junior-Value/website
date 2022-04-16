@@ -1,23 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import logo from './logo.png';
 import './Navbar.css';
 
 function Navbar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const [isOpened, setIsOpened] = useState(false);
+
+  function toggle() {
+    setIsOpened(wasOpened => !wasOpened);
+  }
+
   return (
     <>
       <nav className='navbar'>
-        <div className='navbar-logo'>
-          <img src={logo} alt='Scientific Logo' />
-        </div>
-        <div className='navbar-links'>
-          <ul>
-            <li className='dropdown'>Sobre Nós<span className='drop-line'></span></li>
-            <li className='dropdown'>Portfólio<span className='drop-line'></span></li>
-            <li>Recrutamento</li>
-            <li>Contactos</li>
-            <li>Blog</li>
-          </ul>
+        <div className='navbar-container'>
+          <div className='navbar-logo'>
+            <img src={logo} alt='Scientific Logo'/>
+          </div>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
+          <div className='navbar-links'>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='dropdown'>Sobre Nós<span className='drop-line'></span></li>
+              <li className='dropdown'>Portfólio<span className='drop-line'></span></li>
+              <li>Recrutamento</li>
+              <li>Contactos</li>
+              <li>Blog</li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>

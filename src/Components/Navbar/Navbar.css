@@ -31,7 +31,7 @@
   height: 100%;
 }
 
-.navbar-links ul{
+.nav-menu{
   height: 100%;
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@
   align-items: center;
 }
 
-.navbar-links ul li {
+.list-item {
   height: 100%;
   display: flex;
   align-items: center;
@@ -66,10 +66,25 @@
   transition: .3s;
 }
 
-.navbar-links ul li:hover .dropdown-list{
-  top: 81px;
+.list-item:hover .dropdown-list{
+  top: 80px;
   visibility: visible;
   opacity: 1;
+  color: white;
+  border-top: solid 1px #fff;
+}
+
+.dropdown-list li {
+  list-style: none;
+  padding: 1rem 1.5rem;
+}
+
+.dropdown-list li:hover {
+  color: #5FAB30;
+}
+
+.dropdown-list li:hover .dropdown {
+  color: white;
 }
 
 .navbar-links ul li:last-child {
@@ -84,13 +99,13 @@
   background-color: #fff;
 }
 
-.navbar-links ul li:hover {
+.list-item:hover {
   cursor: pointer;
   color: #5FAB30;
   transition: color 0.25s ease-in-out;
 }
 
-.navbar-links ul li:hover .drop-line{
+.list-item:hover .drop-line{
   transform: rotate(-45deg);
   background-color: #5FAB30;
   transition: all 0.25s ease-in-out;
@@ -110,7 +125,11 @@
     align-items: flex-start;
   }
 
-  .navbar-links ul li {
+  .dropdown-list {
+    align-items: flex-start;
+  }
+
+  .list-item {
     height: auto;
   }
 
@@ -132,7 +151,7 @@
     cursor: pointer;
   }
 
-  .navbar-container ul li {
+  .list-item {
     padding: 1rem;
   }
 }

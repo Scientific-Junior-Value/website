@@ -19,21 +19,21 @@ function Navbar() {
           </div>
           <div className='navbar-links'>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className='dropdown'>Sobre Nós<span className='drop-line'></span>
+              <li className='list-item dropdown'>Sobre Nós<span className='drop-line'></span>
                 <ul className='dropdown-list'>
                     <li>Quem Somos</li>
                     <li>Equipa</li>
                 </ul>
               </li>
-              <li className='dropdown'>Portfólio<span className='drop-line'></span>
+              <li className='list-item dropdown'>Portfólio<span className='drop-line'></span>
                 <ul className='dropdown-list'>
                       <li>Option 1</li>
                       <li>Option 2</li>
                 </ul>
               </li>
-              <li>Recrutamento</li>
-              <li>Contactos</li>
-              <li>Blog</li>
+              <li className='list-item'>Recrutamento</li>
+              <li className='list-item'>Contactos</li>
+              <li className='list-item'>Blog</li>
             </ul>
           </div>
         </div>

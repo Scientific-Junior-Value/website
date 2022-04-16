@@ -125,8 +125,10 @@
     align-items: flex-start;
   }
 
-  .dropdown-list {
-    align-items: flex-start;
+  .list-item:hover .dropdown-list{
+    border-top: none;
+    top: 50px;
+    width: 100%;
   }
 
   .list-item {

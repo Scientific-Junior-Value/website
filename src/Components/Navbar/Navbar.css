@@ -71,7 +71,7 @@
   visibility: visible;
   opacity: 1;
   color: white;
-  border-top: solid 1px #fff;
+  box-shadow: 0 -2px 2px -2px #fff;
 }
 
 .dropdown-list li {
@@ -112,6 +112,12 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar-logo {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+  }
+
   .navbar-container .nav-menu{
     display: none;
     background-color: #000;
@@ -126,7 +132,7 @@
   }
 
   .list-item:hover .dropdown-list{
-    border-top: none;
+    box-shadow: none;
     top: 50px;
     width: 100%;
   }

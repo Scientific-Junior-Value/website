@@ -6,11 +6,6 @@ function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const [isOpened, setIsOpened] = useState(false);
-
-  function toggle() {
-    setIsOpened(wasOpened => !wasOpened);
-  }
 
   return (
     <>

@@ -4,7 +4,7 @@ import './Form.css';
 
 function Form() {
     return (
-        <div style={{margin: '8rem 0', position: 'absolute'}}>
+        <div className='form'>
             <div className='form-wrapper'>
                 <Input placeholder='Nome'/>
                 <Input placeholder='Email'/>

@@ -19,7 +19,8 @@ function Navbar() {
           </div>
           <div className='navbar-links'>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className='list-item dropdown'>Sobre Nós<span className='drop-line'></span>
+              <li className='list-item dropdown'>
+                Sobre Nós<span className='drop-line'></span>
                 <ul className='dropdown-list'>
                     <li>Quem Somos</li>
                     <li>Equipa</li>

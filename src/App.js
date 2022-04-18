@@ -16,7 +16,7 @@ function App() {
             <Route path='/sign-up' component="" />
           </Routes>
       </BrowserRouter>
-      <Form classname='form'/>
+      <Form />
       <Footer />
     </>
   );

@@ -2,11 +2,12 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Form from './Components/Form/Form';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
         <Navbar />
           <Routes>
             <Route path='/' exact={true} component=""/>
@@ -15,6 +16,7 @@ function App() {
             <Route path='/sign-up' component="" />
           </Routes>
       </BrowserRouter>
+      <Form classname='form'/>
       <Footer />
     </>
   );

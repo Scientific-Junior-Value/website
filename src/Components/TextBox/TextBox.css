@@ -1,0 +1,12 @@
+.textbox-wrapper {
+    padding: 0.5rem;
+}
+
+.textbox-wrapper textarea{
+    border-radius: 0;
+    border: solid 1px #000;
+    width: 20rem;
+    resize: none;
+    height: 8rem;
+    padding: 0.3rem;
+}

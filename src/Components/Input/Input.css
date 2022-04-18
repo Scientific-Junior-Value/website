@@ -1,0 +1,14 @@
+.input-wrapper {
+    padding: 0.5rem;
+}
+
+.input-wrapper input{
+    border-radius: 0;
+    border: solid 1px #000;
+    padding: 0.3rem;
+    width: 20rem;
+}
+
+::placeholder {
+    color: #5FAB30;
+}

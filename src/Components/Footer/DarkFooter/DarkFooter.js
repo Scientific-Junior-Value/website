@@ -1,6 +1,5 @@
 import './DarkFooter.css';
 import logo from './logo.png';
-import instagram from './icons/instagram.png'
 
 function DarkFooter() {
     return (

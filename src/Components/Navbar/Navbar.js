@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from './logo.png';
 import './Navbar.css';
 
@@ -45,9 +46,15 @@ function Navbar() {
                       <li>Option 2</li>
                 </ul>
               </li>
-              <li className='list-item'>Recrutamento</li>
-              <li className='list-item'>Contactos</li>
-              <li className='list-item'>Blog</li>
+              <Link to='/recrutamento' className='list-item'>
+                Recrutamento
+              </Link>
+              <Link to='/contactos' className='list-item'>
+                Contacts
+              </Link>
+              <Link to='/blog' className='list-item'>
+                Blog
+              </Link>
             </ul>
           </div>
         </div>

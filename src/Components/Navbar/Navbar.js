@@ -12,7 +12,7 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener('scroll', (event) => {
         // Get scroll position
-        if (window.pageYOffset > 20) {
+        if (window.pageYOffset > 30) {
             setDark(false);
         } else {
             setDark(true);

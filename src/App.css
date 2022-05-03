@@ -4,3 +4,8 @@
     margin: 0;
     padding: 0;
 }
+
+.apagar {
+    height: 30vh;
+    background-color: #ccc;
+}

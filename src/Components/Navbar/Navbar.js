@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from './logo.png';
 import './Navbar.css';
 
@@ -7,9 +7,22 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
 
+  const [dark, setDark] = useState(true);
+  // On scrool, make bg black
+  useEffect(() => {
+    window.addEventListener('scroll', (event) => {
+        // Get scroll position
+        if (window.pageYOffset > 20) {
+            setDark(false);
+        } else {
+            setDark(true);
+        }
+    });
+}, []);
+
   return (
     <>
-      <nav className='navbar'>
+      <nav className={dark ? 'navbar': 'navbar-dark'}>
         <div className='navbar-container'>
           <div className='navbar-logo'>
             <img src={logo} alt='Scientific Logo'/>
@@ -21,13 +34,13 @@ function Navbar() {
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='list-item dropdown'>
                 Sobre Nós<span className='drop-line'></span>
-                <ul className='dropdown-list'>
+                <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
                     <li>Quem Somos</li>
                     <li>Equipa</li>
                 </ul>
               </li>
               <li className='list-item dropdown'>Portfólio<span className='drop-line'></span>
-                <ul className='dropdown-list'>
+                <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
                       <li>Option 1</li>
                       <li>Option 2</li>
                 </ul>

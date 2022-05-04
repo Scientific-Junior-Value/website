@@ -35,11 +35,16 @@
         margin-left: 2.5%;
     }
     .labels-list {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         width: 100%;
-        font-size: 15px;
     }
     .labels-list li {
         margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .labels-list {
+        font-size: 15px;
     }
 }

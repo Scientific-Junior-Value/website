@@ -10,6 +10,10 @@
     justify-content: space-around;
 }
 
+.labels {
+    padding: 0.5rem;
+}
+
 .labels-list {
     list-style: none;
     font-size: 16px;

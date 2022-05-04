@@ -36,26 +36,32 @@ function Navbar() {
               <li className='list-item dropdown'>
                 Sobre Nós<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                    <li>Quem Somos</li>
-                    <li>Equipa</li>
+                    <li><Link to='/website' className='list-item-link'>Quem Somos</Link></li>
+                    <li><Link to='/website' className='list-item-link'>Equipa</Link></li>
                 </ul>
               </li>
               <li className='list-item dropdown'>Portfólio<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                      <li>Serviços</li>
-                      <li>Iniciativas</li>
-                      <li>Responsabilidades Sociais</li>
+                      <li><Link to='/website' className='list-item-link'>Serviços</Link></li>
+                      <li><Link to='/website' className='list-item-link'>Iniciativas</Link></li>
+                      <li><Link to='/website' className='list-item-link'>Responsabilidades Sociais</Link></li>
                 </ul>
               </li>
-              <Link to='/recrutamento' className='list-item'>
+              <li className='list-item'>
+              <Link to='/website/recrutamento' className='list-item-link'>
                 Recrutamento
               </Link>
-              <Link to='/contactos' className='list-item'>
+              </li>
+              <li className='list-item'>
+              <Link to='/website/contactos' className='list-item-link'>
                 Contacts
               </Link>
-              <Link to='/blog' className='list-item'>
+              </li>
+              <li className='list-item'>
+              <Link to='/website/blog' className='list-item-link'>
                 Blog
               </Link>
+              </li>
             </ul>
           </div>
         </div>

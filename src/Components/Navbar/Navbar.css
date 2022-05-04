@@ -123,16 +123,21 @@
   background-color: #fff;
 }
 
-.list-item:hover {
+.list-item:hover, .list-item-link:hover {
   cursor: pointer;
   color: #5FAB30;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.20s ease-in-out;
 }
 
 .list-item:hover .drop-line{
   transform: rotate(-45deg);
   background-color: #5FAB30;
   transition: all 0.25s ease-in-out;
+}
+
+.list-item-link {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 960px) {

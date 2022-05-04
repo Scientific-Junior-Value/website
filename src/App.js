@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Contacts from './Pages/Contacts/Contacts';
 
 function App() {
@@ -8,15 +8,14 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-          <Routes>
-            <Route path='/'component=""/>
+          <Switch>
+            <Route path='/' exact={true} component=""/>
             <Route path='/services' component="" />
-            <Route path='/contacts' component={Contacts} />
+            <Route path='/contacts/' component={Contacts} />
             <Route path='/sign-up' component="" />
-          </Routes>
+          </Switch>
       </BrowserRouter>
       <Contacts />
-      {/*<Footer />*/}
     </>
   );
 }

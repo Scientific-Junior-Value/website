@@ -103,7 +103,7 @@
   padding: 1rem 1.5rem;
 }
 
-.dropdown-list li:hover {
+.dropdown-list li:hover, .dropdown-list-dark li:hover {
   color: #5FAB30;
 }
 

@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import Input from '../Input/Input';
 import TextBox from '../TextBox/Textbox';
 import './Form.css';
@@ -12,6 +13,7 @@ function Form() {
                     <Input placeholder='Assunto'/>
                     <TextBox placeholder='Mensagem'/>
                     <span className='fill-fields'>* (campo de preenchimento obrigatório)</span>
+                    <Button />
                 </div>
                 <div className='labels'>
                     <ul className='labels-list'>

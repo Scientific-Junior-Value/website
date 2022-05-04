@@ -9,7 +9,7 @@
     resize: none;
     height: 12rem;
     padding: 0.7rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -17,6 +17,5 @@
         width: 95%;
         margin-left: 2.5%;
         margin-right: 2.5%;
-        margin-bottom: 1.5rem;
     }
 }

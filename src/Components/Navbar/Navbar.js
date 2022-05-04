@@ -7,6 +7,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   const [dark, setDark] = useState(true);
   // On scrool, make bg black
@@ -36,29 +37,29 @@ function Navbar() {
               <li className='list-item dropdown'>
                 Sobre Nós<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                    <li><Link to='/website' className='list-item-link'>Quem Somos</Link></li>
-                    <li><Link to='/website' className='list-item-link'>Equipa</Link></li>
+                    <li><Link to='/website' className='list-item-link' onClick={closeMobileMenu}>Quem Somos</Link></li>
+                    <li><Link to='/website' className='list-item-link' onClick={closeMobileMenu}>Equipa</Link></li>
                 </ul>
               </li>
               <li className='list-item dropdown'>Portfólio<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                      <li><Link to='/website/portfolio' className='list-item-link'>Serviços</Link></li>
-                      <li><Link to='/website/portfolio' className='list-item-link'>Iniciativas</Link></li>
-                      <li><Link to='/website/portfolio' className='list-item-link'>Responsabilidades Sociais</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link' onClick={closeMobileMenu}>Serviços</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link' onClick={closeMobileMenu}>Iniciativas</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link' onClick={closeMobileMenu}>Responsabilidades Sociais</Link></li>
                 </ul>
               </li>
               <li className='list-item'>
-              <Link to='/website/recrutamento' className='list-item-link'>
+              <Link to='/website/recrutamento' className='list-item-link' onClick={closeMobileMenu}>
                 Recrutamento
               </Link>
               </li>
               <li className='list-item'>
-              <Link to='/website/contactos' className='list-item-link'>
+              <Link to='/website/contactos' className='list-item-link' onClick={closeMobileMenu}>
                 Contacts
               </Link>
               </li>
               <li className='list-item'>
-              <Link to='/website/blog' className='list-item-link'>
+              <Link to='/website/blog' className='list-item-link' onClick={closeMobileMenu}>
                 Blog
               </Link>
               </li>

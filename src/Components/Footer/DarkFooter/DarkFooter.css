@@ -11,7 +11,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25rem;
 }
 
 .footer-logo-wrapper {
@@ -26,17 +25,20 @@
 }
 
 .contacts-list {
+    margin: 0 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.dark-footer-copy {
+.dark-footer-copy-wrapper {
     padding: 1.5rem;
     color: #5FAB30;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons {

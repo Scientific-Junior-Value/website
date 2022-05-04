@@ -17,7 +17,9 @@ function DarkFooter() {
                         <p>Faltam os icons </p>
                 </div>
             </div>
-            <p className='dark-footer-copy'>&copy; 2022 Scientific Junior Value</p>
+            <div className='dark-footer-copy-wrapper'>
+                <p className='dark-footer-copy'>&copy; 2022 Scientific Junior Value</p>
+            </div>
         </div>
     );
 }

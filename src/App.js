@@ -17,7 +17,6 @@ function App() {
             <Route path='/website/blog' component={Home} />
           </Switch>
       </BrowserRouter>
-      <Contacts />
     </>
   );
 }

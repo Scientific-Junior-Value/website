@@ -1,0 +1,63 @@
+.recrutamento-content {
+    padding: 9rem 8rem;
+}
+
+.recrutamento-content ul {
+    list-style: none;
+}
+
+.recrutamento-content ul li {
+    margin-bottom: 1rem;
+}
+
+.recrutamento-content ul li:last-child{
+    margin-bottom: 0;
+}
+
+.recrutamento-header {
+    color: #5FAB30;
+}
+
+.recrutamento-list-content-title {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.initial-line {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    margin-right: 1rem;
+    height: 2px;
+    width: 12px;
+    background-color: #5FAB30;
+    transform: rotate(-45deg);
+}
+
+.p-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.recrutamento-header-final {
+    margin-top: 3rem;
+}
+
+.recrutamento-header-final p:first-child {
+    margin-bottom: 1rem;
+}
+
+.recrutamento-header-final p {
+    font-size: 18px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+    .recrutamento-content {
+        padding: 3rem 1rem;
+    }
+}

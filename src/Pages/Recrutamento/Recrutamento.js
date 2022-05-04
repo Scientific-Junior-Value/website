@@ -51,12 +51,10 @@ function Recrutamento() {
           <li>
             <div className="recrutamento-list-content">
               <p className="recrutamento-list-content-title">Nas dinâmicas:</p>
-              <div className="p-wrapper">
                 <p className="recrutamento-list-content-text">
                 <span className="initial-line"></span>
                 Interage com os teus colegas e valoriza as suas capacidades e ideias.
                 </p>
-              </div>
             </div>
           </li>
         </ul>

@@ -5,10 +5,11 @@
 .textbox-wrapper textarea{
     border-radius: 0;
     border: solid 1px #000;
-    width: 25rem;
+    width: 28rem;
     resize: none;
-    height: 8rem;
+    height: 12rem;
     padding: 0.7rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 960px) {

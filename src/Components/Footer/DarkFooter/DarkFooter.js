@@ -9,7 +9,7 @@ function DarkFooter() {
                     <img src={logo} alt='Scientific Logo'></img>
                 </div>
                 <div className='contacts-list'>
-                    <span>Contactos</span>
+                    <span className='contacts-list-title'>Contactos</span>
                     <span>geral@scientific.pt</span>
                     <span>scientificjuniorvalue@gmail.com</span>
                 </div>

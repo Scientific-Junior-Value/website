@@ -42,9 +42,9 @@ function Navbar() {
               </li>
               <li className='list-item dropdown'>Portfólio<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                      <li><Link to='/website' className='list-item-link'>Serviços</Link></li>
-                      <li><Link to='/website' className='list-item-link'>Iniciativas</Link></li>
-                      <li><Link to='/website' className='list-item-link'>Responsabilidades Sociais</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link'>Serviços</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link'>Iniciativas</Link></li>
+                      <li><Link to='/website/portfolio' className='list-item-link'>Responsabilidades Sociais</Link></li>
                 </ul>
               </li>
               <li className='list-item'>

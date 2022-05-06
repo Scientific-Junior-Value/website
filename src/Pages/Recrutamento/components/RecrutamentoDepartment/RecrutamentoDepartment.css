@@ -1,0 +1,68 @@
+.department-wrapper {
+    padding: 0 8rem 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}   
+
+.departments-name span {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    display: block;
+    font-size: 18px;    
+    padding-bottom: 1.5rem;
+}
+
+.dep-ci {
+    color: orange;
+}
+
+.dep-rc {
+    color: #5FAB30;
+    opacity: 0.3;
+}
+
+.dep-re {
+    color: rgb(99, 179, 206);
+    opacity: 0.3;
+}
+
+.dep-rh {
+    color: red;
+    opacity: 0.3;
+}
+
+.department-qualities-title, .department-qualities-functions {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: orange;
+    opacity: 0.7;
+}
+.department-qualities {
+    width: 50rem;
+}
+
+.department-qualities p {
+    padding-bottom: 0.7rem;
+}
+
+.department-qualities-title-items p,
+.department-qualities-functions-items p {
+    font-family: 'Poppins';
+}
+
+.init-line {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    margin-right: 1rem;
+    height: 2px;
+    width: 12px;
+    background-color: orange;
+    transform: rotate(-45deg);
+}
+
+.department-image {
+    padding-top: 3rem;
+    text-align: center;
+}

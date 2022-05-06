@@ -5,6 +5,7 @@
   background-color: transparent;
   color: white;
   font-weight: bold;
+  z-index: 2;
 }
 
 .navbar-dark {
@@ -14,6 +15,7 @@
   background-color: #000;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .navbar-container {

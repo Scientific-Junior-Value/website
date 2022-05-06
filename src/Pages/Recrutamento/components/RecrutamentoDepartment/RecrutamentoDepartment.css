@@ -66,3 +66,19 @@
     padding-top: 3rem;
     text-align: center;
 }
+
+@media screen and (max-width: 960px) {
+    .department-wrapper {
+        flex-direction: column;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .departments-name {
+        padding-bottom: 2rem;
+    }
+
+    .department-qualities {
+        width: 100%;
+    }
+
+}

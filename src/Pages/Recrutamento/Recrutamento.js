@@ -24,7 +24,10 @@ function Recrutamento() {
             class="dep-re"
             department="Dep. Relações Empresariais"
           />
-          <DepartmentsName class="dep-rh" department="Dep. Recursos Humanos" />
+          <DepartmentsName 
+            class="dep-rh" 
+            department="Dep. Recursos Humanos" 
+          />
         </div>
         <DepartmentsQualities />
       </div>

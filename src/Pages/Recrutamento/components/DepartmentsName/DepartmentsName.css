@@ -1,0 +1,32 @@
+.departments-name span {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    display: block;
+    font-size: 18px;    
+    padding-bottom: 1.5rem;
+}
+
+.dep-ci {
+    color: orange;
+}
+
+.dep-rc {
+    color: #5FAB30;
+    opacity: 0.3;
+}
+
+.dep-re {
+    color: rgb(99, 179, 206);
+    opacity: 0.3;
+}
+
+.dep-rh {
+    color: red;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 960px) {
+    .departments-name {
+        padding-bottom: 2rem;
+    }
+}

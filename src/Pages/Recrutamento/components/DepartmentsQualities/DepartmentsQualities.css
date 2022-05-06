@@ -1,37 +1,3 @@
-.department-wrapper {
-    padding: 0 8rem 4rem 8rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}   
-
-.departments-name span {
-    font-family: 'Montserrat';
-    font-weight: bold;
-    display: block;
-    font-size: 18px;    
-    padding-bottom: 1.5rem;
-}
-
-.dep-ci {
-    color: orange;
-}
-
-.dep-rc {
-    color: #5FAB30;
-    opacity: 0.3;
-}
-
-.dep-re {
-    color: rgb(99, 179, 206);
-    opacity: 0.3;
-}
-
-.dep-rh {
-    color: red;
-    opacity: 0.3;
-}
-
 .department-qualities-title, .department-qualities-functions {
     font-size: 18px;
     font-family: 'Montserrat';
@@ -68,15 +34,6 @@
 }
 
 @media screen and (max-width: 960px) {
-    .department-wrapper {
-        flex-direction: column;
-        padding: 0 1rem 2rem 1rem;
-    }
-
-    .departments-name {
-        padding-bottom: 2rem;
-    }
-
     .department-qualities {
         width: 100%;
     }

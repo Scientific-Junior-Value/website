@@ -1,19 +1,9 @@
-import './RecrutamentoDepartment.css';
-import Footer from '../../../../Components/Footer/Footer'
-
+import "./DepartmentsQualities.css";
 import img from './camera.png';
 
-function RecrutamentoDepartment(props) {
+function DepartmentsQualities() {
   return (
-    <>
-      <div className="department-wrapper">
-        <div className="departments-name">
-          <span className="dep-ci">Dep. Comunicação e Imagem</span>
-          <span className="dep-rc">Dep. Relações Científicas</span>
-          <span className="dep-re">Dep. Relações Empresariais</span>
-          <span className="dep-rh">Dep. Recursos Humanos</span>
-        </div>
-        <div className="department-qualities">
+<div className="department-qualities">
           <p className="department-qualities-title">
             Um membro de CI deve ter:
           </p>
@@ -36,10 +26,7 @@ function RecrutamentoDepartment(props) {
             <img src={img} alt='Department Img'></img>
           </div>
         </div>
-      </div>
-      <Footer />
-    </>
   );
 }
 
-export default RecrutamentoDepartment;
+export default DepartmentsQualities;

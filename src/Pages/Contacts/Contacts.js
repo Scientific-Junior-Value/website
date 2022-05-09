@@ -6,7 +6,7 @@ import DarkFooter from '../../Components/Footer/DarkFooter/DarkFooter';
 function Contacts() {
   return (
     <>
-      <Background title='Contactos' desc=''/>
+      <Background class='background' title='Contactos' desc=''/>
       <Form />
       <DarkFooter />
     </>

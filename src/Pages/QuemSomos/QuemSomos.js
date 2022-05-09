@@ -7,6 +7,7 @@ function Blog() {
   return (
     <>
       <Background
+        class='background'
         title="Quem Somos"
         desc='"pretendemos promover o contacto entre os jovens
         e o tecido empresarial"'

@@ -9,7 +9,7 @@ import ListView from "../../Components/ListView/ListView";
 function Recrutamento() {
   return (
     <>
-      <Background title="Recrutamento" desc="" />
+      <Background class='background' title="Recrutamento" desc="" />
       <RecrutamentoContent />
       <ListView>
         <div>

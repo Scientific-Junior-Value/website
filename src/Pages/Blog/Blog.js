@@ -5,6 +5,7 @@ function Blog() {
   return (
     <>
       <Background
+        class='background'
         title="Blog"
         desc="Acompanha a rubrica nova da Scientific, assim como fun facts e curiosidades!"
       />

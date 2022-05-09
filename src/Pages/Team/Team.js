@@ -9,6 +9,7 @@ function Team() {
   return (
     <>
     <Background
+      class='background'
       title="Equipa"
       desc="A Scientific é constituída por estudantes de diferentes cursos, não só das áreas das ciências mas 
       também de outras áreas, da Universidade de Aveiro e encontra-se dividida por quatro Departamentos: Comunicação e 

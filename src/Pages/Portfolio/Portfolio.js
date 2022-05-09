@@ -5,6 +5,7 @@ function Portfolio() {
   return (
     <>
       <Background
+        class='background'
         title="Portfolio"
         desc=""
       />

@@ -5,6 +5,7 @@ import Contacts from './Pages/Contacts/Contacts';
 import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
 import Team from './Pages/Team/Team';
+import QuemSomos from './Pages/QuemSomos/QuemSomos';
 import Recrutamento from './Pages/Recrutamento/Recrutamento';
 import Portfolio from './Pages/Portfolio/Portfolio';
 
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
           <Switch>
             <Route path='/website' exact component={Home}/>
+            <Route path='/website/quem-somos' component={QuemSomos}/>
             <Route path='/website/equipa' component={Team} />
             <Route path='/website/portfolio' component={Portfolio} />
             <Route path='/website/recrutamento' component={Recrutamento} />

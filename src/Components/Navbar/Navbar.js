@@ -37,7 +37,7 @@ function Navbar() {
               <li className='list-item dropdown'>
                 Sobre Nós<span className='drop-line'></span>
                 <ul className={dark ? 'dropdown-list' : 'dropdown-list-dark'}>
-                    <li><Link to='/website' className='list-item-link' onClick={closeMobileMenu}>Quem Somos</Link></li>
+                    <li><Link to='/website/quem-somos' className='list-item-link' onClick={closeMobileMenu}>Quem Somos</Link></li>
                     <li><Link to='/website/equipa' className='list-item-link' onClick={closeMobileMenu}>Equipa</Link></li>
                 </ul>
               </li>

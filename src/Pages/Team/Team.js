@@ -1,6 +1,7 @@
 import Background from "../../Components/Background/Background";
 import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
+import ListImgItem from "../../Components/ListView/ListImgItem/ListImgItem";
 import ListView from "../../Components/ListView/ListView";
 import "./Team.css";
 
@@ -48,6 +49,41 @@ function Team() {
             class="alumni" 
             department="Testemunhos Alumni" 
           />
+        </div>
+        <div className="team-content-wrapper">
+          <div className="team-content">
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+          </div>
+          <div className="team-content">
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+          </div>
+          <div className="team-content">
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+            <ListImgItem
+              name='Lorem Ispum'
+            />
+          </div>
         </div>
       </ListView>
       <Footer />

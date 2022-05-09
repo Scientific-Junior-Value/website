@@ -21,6 +21,9 @@ function QuemSomos() {
         </div>
     </div>
     <div className="quem-somos-item-2">
+        <div className="img-quem-somos-wrapper-2-mobile">
+          <img alt="" src={img}></img>
+        </div>
         <div className="quem-somos-item-2-text">
           <p>
           Orgulhamo-nos de ter por base valores como o dinamismo, a confiança, a filosofia Lean e a satisfação do cliente. 

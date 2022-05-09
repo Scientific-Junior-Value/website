@@ -29,6 +29,11 @@
     height: 22rem;
 }
 
+.img-quem-somos-wrapper-3 {
+    width: 24rem;
+    height: 26rem;
+}
+
 .img-quem-somos-wrapper img {
     width: 100%;
     height: 100%;
@@ -39,6 +44,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.img-quem-somos-wrapper-2-mobile {
+    display: none;
 }
 
 .quem-somos-item-1-text {
@@ -86,10 +95,6 @@
         padding-bottom: 4rem;
     }
 
-    .quem-somos-item-2-text {
-        padding-bottom: 1rem;
-    }
-
     .quem-somos-item-3 {
         padding-top: 4rem;
     }
@@ -97,5 +102,29 @@
     .quem-somos-item-3-text {
         padding-top: 1rem;
         padding-bottom: 6rem;
+    }
+
+    .img-quem-somos-wrapper-2 {
+        display: none;
+    }
+
+    .img-quem-somos-wrapper, .img-quem-somos-wrapper-2, .img-quem-somos-wrapper-2-mobile {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .img-quem-somos-wrapper-2-mobile {
+        display: block;
+    }
+
+    .img-quem-somos-wrapper-2-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .quem-somos-item-2-text {
+        padding-top: 1rem;
     }
 }

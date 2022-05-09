@@ -1,36 +1,37 @@
 import "./Recrutamento.css";
 import Background from "../../Components/Background/Background";
 import RecrutamentoContent from "./components/RecrutamentoContent/RecrutamentoContent";
-import DepartmentsName from "./components/DepartmentsName/DepartmentsName";
 import DepartmentsQualities from "./components/DepartmentsQualities/DepartmentsQualities";
 import Footer from "../../Components/Footer/Footer";
+import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
+import ListView from "../../Components/ListView/ListView";
 
 function Recrutamento() {
   return (
     <>
       <Background title="Recrutamento" desc="" />
       <RecrutamentoContent />
-      <div className="department-wrapper">
+      <ListView>
         <div>
-          <DepartmentsName
+          <ListHeader
             class="dep-ci"
             department="Dep. Comunicação e Imagem"
           />
-          <DepartmentsName
+          <ListHeader
             class="dep-rc"
             department="Dep. Relações Científicas"
           />
-          <DepartmentsName
+          <ListHeader
             class="dep-re"
             department="Dep. Relações Empresariais"
           />
-          <DepartmentsName 
+          <ListHeader 
             class="dep-rh" 
             department="Dep. Recursos Humanos" 
           />
         </div>
         <DepartmentsQualities />
-      </div>
+      </ListView>
       <Footer />
     </>
   );

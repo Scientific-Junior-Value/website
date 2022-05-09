@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <>
       <Background
-        class='background'
+        class='background-no-margin'
         title="Portfolio"
         desc=""
       />

@@ -1,0 +1,9 @@
+.direction, .mag, .fiscal {
+    color: gray;
+    opacity: 0.3;
+}
+
+.alumni {
+    color: #000;
+    opacity: 0.3;
+}

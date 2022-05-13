@@ -5,8 +5,13 @@ import DepartmentsQualities from "./components/DepartmentsQualities/DepartmentsQ
 import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";
+import { useState } from 'react';
 
 function Recrutamento() {
+
+  const [department, setDepartment] = useState('CI');
+  const changeDepartment = (department) => setDepartment(department);
+
   return (
     <>
       <Background class='background' title="Recrutamento" desc="" />
@@ -16,21 +21,25 @@ function Recrutamento() {
           <ListHeader
             class="dep-ci"
             department="Dep. Comunicação e Imagem"
+            departmentClicked={() => changeDepartment('CI')}
           />
           <ListHeader
             class="dep-rc"
             department="Dep. Relações Científicas"
+            departmentClicked={() => changeDepartment('RC')}
           />
           <ListHeader
             class="dep-re"
             department="Dep. Relações Empresariais"
+            departmentClicked={() => changeDepartment('RE')}
           />
           <ListHeader 
             class="dep-rh" 
             department="Dep. Recursos Humanos" 
+            departmentClicked={() => changeDepartment('RH')}
           />
         </div>
-        <DepartmentsQualities />
+        <DepartmentsQualities department={department} />
       </ListView>
       <Footer />
     </>

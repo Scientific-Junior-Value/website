@@ -1,8 +1,39 @@
+.CI {
+    color: #F0B056;
+}
+
+.RC {
+    color: #5FAB30;
+}
+
+.RE {
+    color: #00AFB9;
+}
+
+.RH {
+    color: #E15551;
+}
+
+.init-CI {
+    background-color: #F0B056;
+}
+
+.init-RC {
+    background-color: #5FAB30;
+}
+
+.init-RE {
+    background-color: #00AFB9;
+}
+
+.init-RH {
+    background-color: #E15551;
+}
+
 .department-qualities-title, .department-qualities-functions {
     font-size: 18px;
     font-family: 'Montserrat';
     font-weight: bold;
-    color: orange;
     opacity: 0.7;
 }
 .department-qualities {
@@ -24,7 +55,6 @@
     margin-right: 1rem;
     height: 2px;
     width: 12px;
-    background-color: orange;
     transform: rotate(-45deg);
 }
 

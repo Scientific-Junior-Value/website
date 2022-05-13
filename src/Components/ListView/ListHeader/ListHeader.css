@@ -13,7 +13,8 @@
 }
 
 .dep-ci {
-    color: orange;
+    color: #F0B056;
+    opacity: 0.3;
 }
 
 .dep-rc {
@@ -22,12 +23,12 @@
 }
 
 .dep-re {
-    color: rgb(99, 179, 206);
+    color: #00AFB9;
     opacity: 0.3;
 }
 
 .dep-rh {
-    color: red;
+    color: #E15551;
     opacity: 0.3;
 }
 

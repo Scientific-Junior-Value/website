@@ -2,9 +2,9 @@ import './ListHeader.css';
 
 function ListHeader(props) {
   return (
-        <div className="list-header">
-          <span className={props.class}>{props.department}</span>
-        </div>
+    <div className="list-header" onClick={props.departmentClicked}>
+      <span className={props.class}>{props.department}</span>
+    </div>
   );
 }
 

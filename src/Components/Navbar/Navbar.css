@@ -143,8 +143,14 @@
 }
 
 @media screen and (max-width: 960px) {
+  .dropdown-list, .dropdown-list-dark {
+    display: none;
+    position: relative;
+  }
+
   .navbar, .navbar-dark {
     background-color: #000;
+    position: relative;
   }
   .navbar-logo {
     position: absolute;
@@ -164,6 +170,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .dropdown-item {
+    position: absolute;
+  }
+
+  .list-item:hover .dropdown-list, .list-item:hover .dropdown-list-dark{
+    top: 0;
   }
 
   .list-item:hover .dropdown-list{

@@ -170,6 +170,10 @@
     padding-bottom: 0;
   }
 
+  .dropdown-list li:first-child {
+    padding-top: 2rem;
+  }
+
   .navbar-container .nav-menu{
     z-index: 1;
     display: none;

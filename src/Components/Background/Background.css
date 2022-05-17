@@ -67,3 +67,13 @@
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width: 468px) {
+    .background-header {
+        font-size: 32px;
+    }
+
+    .background-legend {
+        font-size: 15px;
+    }
+}

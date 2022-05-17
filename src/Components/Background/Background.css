@@ -68,7 +68,7 @@
     }
 }
 
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 320px) {
     .background-header {
         font-size: 32px;
     }

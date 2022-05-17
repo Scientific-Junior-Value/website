@@ -34,6 +34,10 @@
 
 @media screen and (max-width: 960px) {
     .list-header {
-        padding-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .list-header:last-child {
+        padding-bottom: 2.5rem;
     }
 }

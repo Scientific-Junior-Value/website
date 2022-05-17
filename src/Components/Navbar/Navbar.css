@@ -158,6 +158,10 @@
     padding-left: 1rem;
   }
 
+  .dropdown-list li:last-child {
+    padding-bottom: 0;
+  }
+
   .navbar-container .nav-menu{
     z-index: 1;
     display: none;
@@ -174,6 +178,10 @@
 
   .dropdown-item {
     position: absolute;
+  }
+
+  .dropdown {
+    display: block;
   }
 
   .list-item:hover .dropdown-list, .list-item:hover .dropdown-list-dark{

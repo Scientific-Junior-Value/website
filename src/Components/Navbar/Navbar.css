@@ -159,7 +159,11 @@
   }
 
   .list-item-link {
+    cursor: default;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  .list-item-link:focus,  .list-item-link:active,  .list-item-link:visited {
+    outline: none;
   }
 
   .dropdown-list li:last-child {

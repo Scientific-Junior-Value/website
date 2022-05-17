@@ -158,6 +158,10 @@
     padding-left: 1rem;
   }
 
+  .list-item-link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
   .dropdown-list li:last-child {
     padding-bottom: 0;
   }

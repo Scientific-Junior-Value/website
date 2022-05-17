@@ -58,6 +58,6 @@
 
 @media screen and (max-width: 960px) {
     .recrutamento-content {
-        padding: 3rem 1rem;
+        padding: 0 1rem 3rem 1rem;
     }
 }

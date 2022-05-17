@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 960px) {
     .form {
-        padding: 5rem 0;
+        padding: 0;
         height: auto;
         flex-direction: column;
         align-items: center;

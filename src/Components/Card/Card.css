@@ -1,16 +1,27 @@
 .card {
-    border-radius: 20px;
-    background: #fff;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-image {
-    height: 140px;
-    width: 140px;
+    height: 80%;
+    width: 180px;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border: solid 3px #fff;
+}
+
+.card-legend {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }

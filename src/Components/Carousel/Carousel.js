@@ -21,7 +21,20 @@ const Carousel = () => {
                   slidesPerView={5}
                   grabCursor={true}
                   fade={true}    
-                    pagination={{clickable: true}}    
+                    pagination={{clickable: true}} 
+                    breakpoints={
+                        {
+                            0: {
+                                slidesPerView: 1
+                            },
+                            520: {
+                                slidesPerView: 3
+                            },
+                            950: {
+                                slidesPerView: 5
+                            }
+                        }
+                    }
             >
 
             <SwiperSlide><Card name="Dominos" image="parcerias/dominos.png" /></SwiperSlide>
@@ -33,7 +46,7 @@ const Carousel = () => {
             <SwiperSlide><Card name="Carla Pereira" image="parcerias/Carla.png"/></SwiperSlide>
             <SwiperSlide><Card name="Eduardo Espinheira" image="parcerias/eduardo.jpg"/></SwiperSlide>
             <SwiperSlide><Card name="Ginásio da Educação Da Vinci" image="parcerias/ginasiodaeducaçãodavinci.png"/></SwiperSlide>
-            <SwiperSlide><Card name="Henrique Girão" image="parcerias/henrique.jpeg"/></SwiperSlide>
+            <SwiperSlide><Card name="Dr. Henrique Girão" image="parcerias/henrique.jpeg"/></SwiperSlide>
             <SwiperSlide><Card name="Milagre Coffee Shop" image="parcerias/milagre.jpg"/></SwiperSlide>
             <SwiperSlide><Card name="Gráfica Aveirense" image="parcerias/grafica.jpg"/></SwiperSlide>
             <SwiperSlide><Card name="Impresspoint" image="parcerias/impresspoint.png"/></SwiperSlide>

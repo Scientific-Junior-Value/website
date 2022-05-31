@@ -2,6 +2,7 @@ import "./QuemSomos.css";
 import Background from "../../Components/Background/Background";
 import QuemSomosContent from "./components/QuemSomosContent/QuemSomosContent";
 import DarkFooter from "../../Components/Footer/DarkFooter/DarkFooter";
+import Carousel from "../../Components/Carousel/Carousel";
 
 function Blog() {
   return (
@@ -13,6 +14,7 @@ function Blog() {
         e o tecido empresarial"'
       />
       <QuemSomosContent />
+      <Carousel />
       <DarkFooter />
     </>
   );

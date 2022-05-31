@@ -1,0 +1,10 @@
+.carousel {
+    margin-bottom: 10rem;
+    width: 80%;
+    margin: 0 10% 10rem 10%;
+    padding: 2rem 0;
+}
+
+.swiper-container {
+    height: 12.5rem;
+}

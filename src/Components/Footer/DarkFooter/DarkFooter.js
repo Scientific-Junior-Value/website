@@ -1,18 +1,13 @@
 import "./DarkFooter.css";
 import logo from "./logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faFacebookSquare,
-  faInstagramSquare,
-} from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import facebook from "./icons/icon_fb.png";
+import instagram from "./icons/icon_insta.png";
+import linkedin from "./icons/icon_linkedin.png";
 
 function DarkFooter() {
-
-    const handleClick = (link) => {
-        window.open(link);
-      };
+  const handleClick = (link) => {
+    window.open(link);
+  };
 
   return (
     <div className="dark-footer">
@@ -27,13 +22,37 @@ function DarkFooter() {
         </div>
         <div className="social-icons">
           <span>
-            <a className="social-icons-link" href="https://www.facebook.com/ScientificJuniorValue/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+            <a
+              className="social-icons-link"
+              href="https://www.facebook.com/ScientificJuniorValue/"
+              target="_blank"
+            >
+             <div className="icon-image-wrapper">
+                <img src={facebook}></img>
+              </div>
+            </a>
           </span>
           <span>
-            <a className="social-icons-link" href="https://www.instagram.com/scientificjuniorvalue/" target="_blank"><FontAwesomeIcon icon={faInstagramSquare} /> </a>
+            <a
+              className="social-icons-link"
+              href="https://www.instagram.com/scientificjuniorvalue/"
+              target="_blank"
+            >
+              <div className="icon-image-wrapper">
+                <img src={instagram}></img>
+              </div>
+            </a>
           </span>
           <span>
-            <a className="social-icons-link" href="https://www.linkedin.com/in/scientificjuniorvalue" target="_blank"><FontAwesomeIcon  icon={faLinkedin} /> </a>
+            <a
+              className="social-icons-link"
+              href="https://www.linkedin.com/in/scientificjuniorvalue"
+              target="_blank"
+            >
+              <div className="icon-image-wrapper">
+                <img src={linkedin}></img>
+              </div>
+            </a>
           </span>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .img-item-wrapper {
-    width: 15em;
-    height: 15rem;
-    gap: 2rem;
+    width: 16em;
+    height: 16rem;
+    gap: 1.5rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -13,6 +13,10 @@
     width: 85%;
     object-fit: cover;
     border-radius: 100%;
+}
+
+.member-name {
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 960px) {

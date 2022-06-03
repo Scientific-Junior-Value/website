@@ -54,35 +54,24 @@ function Team() {
         <div className="team-content-wrapper">
           <div className="team-content">
             <ListImgItem
-              name='Lorem Ispum'
+              image='team/direction/Inca.JPG'
+              name='Inês Alves'
             />
             <ListImgItem
-              name='Lorem Ispum'
+              image='team/direction/bea.jpg'
+              name='Beatriz Campos'
             />
             <ListImgItem
-              name='Lorem Ispum'
-            />
-          </div>
-          <div className="team-content">
-            <ListImgItem
-              name='Lorem Ispum'
+              image='team/direction/kats.JPG'
+              name='Catarina Carvalho'
             />
             <ListImgItem
-              name='Lorem Ispum'
+            image='team/direction/ribeiro.JPG'
+              name='Catarina Ribeiro'
             />
             <ListImgItem
-              name='Lorem Ispum'
-            />
-          </div>
-          <div className="team-content">
-            <ListImgItem
-              name='Lorem Ispum'
-            />
-            <ListImgItem
-              name='Lorem Ispum'
-            />
-            <ListImgItem
-              name='Lorem Ispum'
+              image='team/direction/jessica.JPG'
+              name='Jéssica Meneses'
             />
           </div>
         </div>

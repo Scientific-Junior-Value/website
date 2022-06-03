@@ -4,3 +4,16 @@
     margin: 0;
     padding: 0;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(253, 249, 249);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #5FAB30;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}

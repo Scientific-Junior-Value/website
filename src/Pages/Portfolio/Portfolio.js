@@ -2,6 +2,7 @@ import "./Portfolio.css";
 import Background from "../../Components/Background/Background";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";
+import Services from "./Components/Services";
 
 function Portfolio() {
   return (
@@ -26,6 +27,7 @@ function Portfolio() {
               department="Responsabilidades Sociais"
         />
       </div>
+      <Services />
       </ListView>
     </>
   );

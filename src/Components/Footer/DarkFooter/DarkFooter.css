@@ -9,7 +9,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -26,7 +26,6 @@
 
 .contacts-list {
     font-size: 18px;
-    margin: 0 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +47,27 @@
 }
 
 .social-icons {
+    width: 12%;
     color: #5FAB30;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons span {
+    font-size: 32px;
+}
+
+.social-icons-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.15s ease-in-out;
 }
 
 @media screen and (max-width: 960px) {
@@ -61,5 +80,9 @@
 
     .contacts-list { 
         margin: 1rem 0 3rem 0;
+    }
+
+    .social-icons {
+        width: 60%;
     }
 }

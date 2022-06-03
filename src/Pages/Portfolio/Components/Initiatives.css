@@ -1,0 +1,32 @@
+.initiatives {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.initiatives-image {
+    width: 10rem;
+    height: 5rem;
+}
+
+.initiatives-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.initiatives-desc {
+    width: 65%;
+    text-align: justify;
+}
+
+.initiative-video {
+    min-width: 4rem;
+    min-height: 1rem;
+    background-color: #000;
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}

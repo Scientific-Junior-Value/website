@@ -48,7 +48,7 @@ const Partnerships = () => {
             <SwiperSlide><PartnershipItem name="Ginásio da Educação Da Vinci" image="parcerias/ginasiodaeducaçãodavinci.png"/></SwiperSlide>
             <SwiperSlide><PartnershipItem name="Dr. Henrique Girão" image="parcerias/henrique.jpeg"/></SwiperSlide>
             <SwiperSlide><PartnershipItem name="Milagre Coffee Shop" image="parcerias/milagre.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Gráfica Aveirense" image="parcerias/grafica.jpg"/></SwiperSlide>
+            <SwiperSlide><PartnershipItem name="Gráfica Aroense" image="parcerias/grafica.jpg"/></SwiperSlide>
             <SwiperSlide><PartnershipItem name="Impresspoint" image="parcerias/impresspoint.png"/></SwiperSlide>
             </Swiper>
         </div>

@@ -3,8 +3,14 @@
 }
 
 .initiatives-image {
-    width: 10rem;
-    height: 5rem;
+    width: auto;
+    max-width: 12rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .initiatives-image img {

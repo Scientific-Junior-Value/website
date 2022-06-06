@@ -5,8 +5,8 @@ const InitiativesItem = (props) => {
     return (
         <div className="initiatives-item-wrapper">
             <div className="logo-text-wrapper">
-                <div className="initiatives-image">
-                    <img src={brainload}></img>
+                <div className={`initiatives-image ${props.imageClass}`}>
+                    <img src={props.image}></img>
                 </div>
                 <div className="initiatives-desc">
                     <p>

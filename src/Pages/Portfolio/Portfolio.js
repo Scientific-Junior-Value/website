@@ -45,18 +45,16 @@ function Portfolio() {
         {showInitiatives && (
           <Initiatives>
             <InitiativesItem
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                    mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-                    voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-                    fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-                    accusantium nemo autem."
+              image="events/brainload.png"
+              text="Com quatro edições de sucesso, o Brainload procura dar a conhecer à comunidade
+              estudantil e aos docentes da Universidade de Aveiro o trabalho científico desenvolvido
+              por equipas de alguns dos principais centros de investigação em Portugal."
             />
             <InitiativesItem
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                    mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-                    voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-                    fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-                    accusantium nemo autem."
+              image="events/scale-up.png"
+              text="O Scale-Up dá-nos a possibilidade de construirmos o nosso futuro, testando as nossas
+              capacidades e desenvolvendo as nossas soft skills, através de palestras dinâmicas dadas
+              pelos melhores na sua área."
             />
           </Initiatives>
         )}

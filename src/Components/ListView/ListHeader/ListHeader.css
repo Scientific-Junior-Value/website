@@ -32,6 +32,10 @@
     opacity: 0.3;
 }
 
+.portfolio-header-item {
+    opacity: 0.3;
+}
+
 @media screen and (max-width: 960px) {
     .list-header {
         padding-bottom: 0.5rem;

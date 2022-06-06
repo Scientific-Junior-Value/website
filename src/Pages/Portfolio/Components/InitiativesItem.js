@@ -1,5 +1,6 @@
 import brainload from "./brainload.png";
 import './InitiativesItem.css';
+import Video from "./Video";
 
 const InitiativesItem = (props) => {
     return (
@@ -14,7 +15,11 @@ const InitiativesItem = (props) => {
                     </p>
                 </div>
             </div>
-            <div className="initiative-video"></div>
+            <div className="video-wrapper">
+                <div className="initiative-video">
+                    <Video video={props.video} />
+                </div>
+            </div>
         </div>
     );
 }

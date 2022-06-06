@@ -1,4 +1,5 @@
 import "./Services.css";
+import file from './assets/PortfólioDeServiços.pdf';
 
 const Services = () => {
   return (
@@ -41,7 +42,7 @@ const Services = () => {
           <span className="services-init-line"></span>Realização do pricing.
         </li>
       </ul>
-      <p className="services-link">O nosso portfólio de serviços pode ser consultado <a href="#" target="_blank">aqui</a>.</p>
+      <p className="services-link">O nosso portfólio de serviços pode ser consultado <a href={file} target="_blank">aqui</a>.</p>
     </div>
   );
 };

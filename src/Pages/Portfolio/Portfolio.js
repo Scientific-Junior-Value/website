@@ -6,6 +6,7 @@ import ListView from "../../Components/ListView/ListView";
 import Services from "./Components/Services";
 import Initiatives from "./Components/Initiatives";
 import InitiativesItem from "./Components/InitiativesItem";
+import Footer from '../../Components/Footer/Footer';
 
 function Portfolio() {
   const [showServices, setShowServices] = useState(true);
@@ -67,6 +68,7 @@ function Portfolio() {
           </Initiatives>
         )}
       </ListView>
+      <Footer />
     </>
   );
 }

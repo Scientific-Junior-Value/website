@@ -56,6 +56,14 @@ function Portfolio() {
               capacidades e desenvolvendo as nossas soft skills, através de palestras dinâmicas dadas
               pelos melhores na sua área."
             />
+            <InitiativesItem
+              image="events/inteligencia.png"
+              imageClass="big-image"
+              text="Neste workshop organizado pela Scientific para uma entidade externa, Célia Azevedo,
+              os participantes aprenderam várias estratégias que lhes permitem um melhor controlo
+              sobre as emoções, como a ansiedade e o stress. Além disso, desenvolveram a sua
+              capacidade de comunicação."
+            />
           </Initiatives>
         )}
       </ListView>

@@ -9,6 +9,13 @@
     margin-bottom: 1.5rem;
 }
 
+.big-image {
+    position: relative;
+    right: 1.5rem;
+    width: 7rem;
+    height: 7rem;
+}
+
 .no-margin {
     margin: 0;
 }

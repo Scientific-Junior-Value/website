@@ -39,13 +39,11 @@
     }
 
     .initiatives-desc {
-        width: 90%;
-        margin-right: 10%;
-        text-align: justify;
+        width: 100%;
     }
 
     .initiative-video {
-        width: 90%;
+        width: 100%;
         height: 5rem;
         min-width: 4rem;
         min-height: 1rem;

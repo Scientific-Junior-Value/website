@@ -8,6 +8,18 @@
     height: 16rem;
 }
 
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #5FAB30;
+    opacity: 1;
+}
+  
+  /* target all bullets */
+.swiper-pagination-bullet {
+    background-color: #36d88a;
+    opacity: 1;
+}
+
 .swiper-pagination {}
 
 @media screen and (max-width: 960px) {

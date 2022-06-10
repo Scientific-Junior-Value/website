@@ -6,9 +6,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import SwiperCore, { Autoplay } from 'swiper';
+import {data} from './data';
 import './Partnerships.css';
 
 const Partnerships = () => {
+
     SwiperCore.use([Autoplay]);
 
     return (
@@ -36,20 +38,12 @@ const Partnerships = () => {
                         }
                     }
             >
-
-            <SwiperSlide><PartnershipItem name="Dominos" image="parcerias/dominos.png" /></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Iron Duke" image="parcerias/ironduke.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="IPDJ" image="parcerias/ipdj.png"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Academia Génios Livres" image="parcerias/gl.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Aveiro Smart Business" image="parcerias/aveirosmart.png"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Universidade de Aveiro" image="parcerias/ua.png"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Carla Pereira" image="parcerias/Carla.png"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Eduardo Espinheira" image="parcerias/eduardo.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Ginásio da Educação Da Vinci" image="parcerias/ginasiodaeducaçãodavinci.png"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Dr. Henrique Girão" image="parcerias/henrique.jpeg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Milagre Coffee Shop" image="parcerias/milagre.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Gráfica Aroense" image="parcerias/grafica.jpg"/></SwiperSlide>
-            <SwiperSlide><PartnershipItem name="Impresspoint" image="parcerias/impresspoint.png"/></SwiperSlide>
+            
+            {data.map((item)=>{
+            return (
+                <SwiperSlide key={item.id}><PartnershipItem name={item.name} image={item.image} /></SwiperSlide>
+            )
+            })}
             </Swiper>
         </div>
     );

@@ -9,11 +9,13 @@ import QuemSomos from './Pages/QuemSomos/QuemSomos';
 import Recrutamento from './Pages/Recrutamento/Recrutamento';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <AnimatePresence>
         <Navbar />
         <ScrollToTop>
           <Switch>
@@ -26,6 +28,7 @@ function App() {
             <Route path='/website/blog' component={Blog} />
           </Switch>
         </ScrollToTop>
+        </AnimatePresence>
       </BrowserRouter>
     </>
   );

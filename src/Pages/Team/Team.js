@@ -1,3 +1,4 @@
+import Animation from "../../Components/Animation/Animation";
 import Background from "../../Components/Background/Background";
 import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
@@ -7,7 +8,7 @@ import "./Team.css";
 
 function Team() {
   return (
-    <>
+    <Animation>
     <Background
       class='background'
       title="Equipa"
@@ -77,7 +78,7 @@ function Team() {
         </div>
       </ListView>
       <Footer />
-    </>
+    </Animation>
   );
 }
 

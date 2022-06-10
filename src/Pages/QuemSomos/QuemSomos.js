@@ -3,10 +3,11 @@ import Background from "../../Components/Background/Background";
 import QuemSomosContent from "./components/QuemSomosContent/QuemSomosContent";
 import DarkFooter from "../../Components/Footer/DarkFooter/DarkFooter";
 import Partnerships from "../../Components/Partnerships/Partnerships";
+import Animation from "../../Components/Animation/Animation";
 
 function Blog() {
   return (
-    <>
+    <Animation>
       <Background
         class='background'
         title="Quem Somos"
@@ -16,7 +17,7 @@ function Blog() {
       <QuemSomosContent />
       <Partnerships />
       <DarkFooter />
-    </>
+    </Animation>
   );
 }
 

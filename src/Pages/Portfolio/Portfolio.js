@@ -7,6 +7,7 @@ import Services from "./Components/Services";
 import Initiatives from "./Components/Initiatives";
 import InitiativesItem from "./Components/InitiativesItem";
 import Footer from '../../Components/Footer/Footer';
+import Animation from "../../Components/Animation/Animation";
 
 function Portfolio() {
   const [showServices, setShowServices] = useState(true);
@@ -23,7 +24,7 @@ function Portfolio() {
   };
 
   return (
-    <>
+    <Animation>
       <Background class="background" title="Portfolio" desc="" />
       <ListView>
         <div>
@@ -72,7 +73,7 @@ function Portfolio() {
         )}
       </ListView>
       <Footer />
-    </>
+    </Animation>
   );
 }
 

@@ -6,6 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";
 import { useState } from 'react';
+import Animation from "../../Components/Animation/Animation";
 
 function Recrutamento() {
 
@@ -13,7 +14,7 @@ function Recrutamento() {
   const changeDepartment = (department) => setDepartment(department);
 
   return (
-    <>
+    <Animation>
       <Background class='background' title="Recrutamento" desc="" />
       <RecrutamentoContent />
       <ListView>
@@ -42,7 +43,7 @@ function Recrutamento() {
         <DepartmentsQualities department={department} />
       </ListView>
       <Footer />
-    </>
+    </Animation>
   );
 }
 

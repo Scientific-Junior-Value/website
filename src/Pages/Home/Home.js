@@ -1,9 +1,10 @@
+import Animation from "../../Components/Animation/Animation";
 import Background from "../../Components/Background/Background";
 import "./Home.css";
 
 function Home() {
   return (
-    <>
+    <Animation>
     <div className="home-clean">
       <Background 
         class='background-no-margin'
@@ -12,7 +13,7 @@ function Home() {
         e o tecido empresarial"' 
       />
     </div>
-    </>
+    </Animation>
   );
 }
 

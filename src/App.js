@@ -8,12 +8,14 @@ import Team from './Pages/Team/Team';
 import QuemSomos from './Pages/QuemSomos/QuemSomos';
 import Recrutamento from './Pages/Recrutamento/Recrutamento';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop>
           <Switch>
             <Route path='/website' exact component={Home}/>
             <Route path='/website/quem-somos' component={QuemSomos}/>
@@ -23,6 +25,7 @@ function App() {
             <Route path='/website/contactos' component={Contacts} />
             <Route path='/website/blog' component={Blog} />
           </Switch>
+        </ScrollToTop>
       </BrowserRouter>
     </>
   );

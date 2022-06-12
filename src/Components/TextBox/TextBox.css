@@ -12,6 +12,10 @@
     margin-bottom: 1rem;
 }
 
+.textbox-wrapper textarea:focus, .textbox-wrapper textarea:active {
+    outline: none;
+}
+
 @media screen and (max-width: 960px) {
     .textbox-wrapper textarea {
         width: 98%;

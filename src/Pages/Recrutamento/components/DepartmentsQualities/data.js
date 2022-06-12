@@ -16,7 +16,7 @@ export const data =
                     'Construir uma rede de contactos para assegurar a divulgação necessária.'
                 ],
             },
-            'image': 'departments/camera.png'
+            'image': 'recrutamento/camera.png'
         },
         'RC' : {
             'qualities': {
@@ -35,7 +35,7 @@ export const data =
                     'Contactar entidades de interesse científico e o Conselho Científico.'
                 ],
             },
-            'image': 'departments/contract.png'
+            'image': 'recrutamento/contract.png'
         },
         'RE' : {
             'qualities': {
@@ -55,7 +55,7 @@ export const data =
                     'Promover a cooperação com empresas procurando sempre aumentar a base de dados.'
                 ],
             },
-            'image': 'departments/documents.png'
+            'image': 'recrutamento/email.png'
         },
         'RH' : {
             'qualities': {
@@ -75,7 +75,7 @@ export const data =
                     'Criar formulários de feedback para avaliação do desempenho da Scientific.'
                 ],
             },
-            'image': 'departments/people.png'
+            'image': 'recrutamento/teamwork.png'
         }
     }
 

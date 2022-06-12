@@ -9,6 +9,10 @@
     width: 28rem;
 }
 
+.input-wrapper input:focus, .input-wrapper input:active {
+    outline: none;
+}
+
 ::placeholder {
     color: #5FAB30;
 }

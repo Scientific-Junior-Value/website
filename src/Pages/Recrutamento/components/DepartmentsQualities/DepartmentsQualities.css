@@ -63,6 +63,10 @@
     text-align: center;
 }
 
+.department-qualities-title, .department-qualities-functions {
+    opacity: 1;
+}
+
 @media screen and (max-width: 960px) {
     .department-qualities {
         width: 100%;

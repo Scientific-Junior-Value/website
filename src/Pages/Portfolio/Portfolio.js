@@ -1,5 +1,4 @@
 import "./Portfolio.css";
-import { useState } from "react";
 import Background from "../../Components/Background/Background";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";

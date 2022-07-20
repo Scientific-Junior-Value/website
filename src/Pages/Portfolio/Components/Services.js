@@ -42,7 +42,7 @@ const Services = () => {
           <span className="services-init-line"></span>Realização do pricing.
         </li>
       </ul>
-      <p className="services-link">O nosso portfólio de serviços pode ser consultado <a href={file} target="_blank">aqui</a>.</p>
+      <p className="services-link">O nosso portfólio de serviços pode ser consultado <a href={file} target="_blank"  rel="noreferrer">aqui</a>.</p>
     </div>
   );
 };

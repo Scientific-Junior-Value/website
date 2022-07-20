@@ -38,6 +38,6 @@ const recruitmentSlice = createSlice({
   },
 });
 
-export const portfolioActions = recruitmentSlice.actions;
+export const recruitmentActions = recruitmentSlice.actions;
 
 export default recruitmentSlice.reducer;

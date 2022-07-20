@@ -7,8 +7,33 @@ import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";
 import { useState } from 'react';
 import Animation from "../../Components/Animation/Animation";
+import { useSelector, useDispatch } from 'react-redux';
+import { recruitmentActions } from "../../store/recrutamento";
 
 const Recrutamento = () => {
+
+  const dispatch = useDispatch();
+
+  const showRE = useSelector((state) => state.recruitment.reActive);
+  const showCI = useSelector((state) => state.recruitment.ciActive);
+  const showRC = useSelector((state) => state.recruitment.rcActive);
+  const showRH = useSelector((state) => state.recruitment.rhActive);
+
+  const reHandler = () => {
+    dispatch(recruitmentActions.setREActive());
+  };
+
+  const ciHandler = () => {
+    dispatch(recruitmentActions.setCIActive());
+  };
+
+  const rcHandler = () => {
+    dispatch(recruitmentActions.setRCActive());
+  };
+
+  const rhHandler = () => {
+    dispatch(recruitmentActions.setRHActive());
+  };
 
   const [department, setDepartment] = useState('CI');
   const changeDepartment = (department) => setDepartment(department);
@@ -20,24 +45,28 @@ const Recrutamento = () => {
       <ListView>
         <div>
           <ListHeader
-            class="dep-ci"
+            class={showCI ? "dep-ci active" : "dep-ci"}
             department="Dep. Comunicação e Imagem"
             departmentClicked={() => changeDepartment('CI')}
+            onClick={ciHandler}
           />
           <ListHeader
-            class="dep-rc"
+            class={showRC ? "dep-rc active" : "dep-rc"}
             department="Dep. Relações Científicas"
             departmentClicked={() => changeDepartment('RC')}
+            onClick={rcHandler}
           />
           <ListHeader
-            class="dep-re"
+            class={showRE ? "dep-re active" : "dep-re"}
             department="Dep. Relações Empresariais"
             departmentClicked={() => changeDepartment('RE')}
+            onClick={reHandler}
           />
           <ListHeader 
-            class="dep-rh" 
+            class={showRH ? "dep-rh active" : "dep-rh"}
             department="Dep. Recursos Humanos" 
             departmentClicked={() => changeDepartment('RH')}
+            onClick={rhHandler}
           />
         </div>
         <DepartmentsQualities department={department} />

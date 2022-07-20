@@ -26,6 +26,7 @@ function DarkFooter() {
               className="social-icons-link"
               href="https://www.facebook.com/ScientificJuniorValue/"
               target="_blank"
+              rel="noreferrer"
             >
              <div className="icon-image-wrapper">
                 <img src={facebook}></img>
@@ -37,6 +38,7 @@ function DarkFooter() {
               className="social-icons-link"
               href="https://www.instagram.com/scientificjuniorvalue/"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="icon-image-wrapper">
                 <img src={instagram}></img>
@@ -48,6 +50,7 @@ function DarkFooter() {
               className="social-icons-link"
               href="https://www.linkedin.com/in/scientificjuniorvalue"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="icon-image-wrapper">
                 <img src={linkedin}></img>

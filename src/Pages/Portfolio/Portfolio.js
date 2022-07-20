@@ -47,7 +47,7 @@ const Portfolio = () => {
             onClick={initiativesHandler}
           />
           <ListHeader
-            class="portfolio-header-item"
+            class={portfolioResponsabilities ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Responsabilidades Sociais"
             onClick={responsabilitiesHandler}
           />

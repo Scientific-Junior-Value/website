@@ -32,7 +32,7 @@
     opacity: 0.3;
 }
 
-.dep-rh.active, .dep-rc.active, .dep-re.active, .dep-ci.active {
+.dep-rh.active, .dep-rc.active, .dep-re.active, .dep-ci.active, .alumni.active {
     opacity: 1;
 }
 

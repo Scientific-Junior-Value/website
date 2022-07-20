@@ -2,12 +2,12 @@ import Animation from "../../Components/Animation/Animation";
 import Background from "../../Components/Background/Background";
 import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
-import ListImgItem from "../../Components/ListView/ListImgItem/ListImgItem";
 import ListView from "../../Components/ListView/ListView";
 import { useSelector, useDispatch } from 'react-redux';
 
 import { teamActions } from "../../store/team";
 import "./Team.css";
+import Direction from "./components/Direction/Direction";
 
 const Team = () => {
 
@@ -107,31 +107,7 @@ const Team = () => {
             onClick={alumniActive}
           />
         </div>
-        {showDirection &&
-        <div className="team-content-wrapper">
-          <div className="team-content">
-            <ListImgItem
-              image='team/direction/Inca.JPG'
-              name='Inês Alves'
-            />
-            <ListImgItem
-              image='team/direction/bea.jpg'
-              name='Beatriz Campos'
-            />
-            <ListImgItem
-              image='team/direction/kats.JPG'
-              name='Catarina Carvalho'
-            />
-            <ListImgItem
-            image='team/direction/ribeiro.JPG'
-              name='Catarina Ribeiro'
-            />
-            <ListImgItem
-              image='team/direction/jessica.JPG'
-              name='Jéssica Meneses'
-            />
-          </div>
-        </div>}
+        {showDirection && <Direction />}
         {showMag && <p>MAG</p>}
         {showCF && <p>Conselho Fiscal</p>}
         {showCI && <p>CI</p>}

@@ -1,7 +1,7 @@
 import "./QuemSomosContent.css";
 import img from './yellow.png';
 
-function QuemSomos() {
+const QuemSomos = () => {
   return (
     <>
     <div className="quem-somos-item-1">

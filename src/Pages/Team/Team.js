@@ -6,7 +6,7 @@ import ListImgItem from "../../Components/ListView/ListImgItem/ListImgItem";
 import ListView from "../../Components/ListView/ListView";
 import "./Team.css";
 
-function Team() {
+const Team = () => {
   return (
     <Animation>
     <Background

@@ -8,7 +8,7 @@ import ListView from "../../Components/ListView/ListView";
 import { useState } from 'react';
 import Animation from "../../Components/Animation/Animation";
 
-function Recrutamento() {
+const Recrutamento = () => {
 
   const [department, setDepartment] = useState('CI');
   const changeDepartment = (department) => setDepartment(department);

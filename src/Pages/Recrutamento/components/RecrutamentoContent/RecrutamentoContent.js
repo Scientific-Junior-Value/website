@@ -1,6 +1,6 @@
 import './RecrutamentoContent.css';
 
-function RecrutamentoContent() {
+const RecrutamentoContent = () => {
   return (
     <>
       <div className="recrutamento-content">

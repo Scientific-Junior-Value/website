@@ -2,7 +2,7 @@ import "./DepartmentsQualities.css";
 import img from './camera.png';
 import { data } from './data';
 
-function DepartmentsQualities(props) {
+const DepartmentsQualities = (props) => {
   const department = data[props.department];
   return (
         <div className="department-qualities">

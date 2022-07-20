@@ -8,19 +8,27 @@ import Initiatives from "./Components/Initiatives";
 import InitiativesItem from "./Components/InitiativesItem";
 import Footer from '../../Components/Footer/Footer';
 import Animation from "../../Components/Animation/Animation";
+import { useSelector, useDispatch } from 'react-redux';
 
-function Portfolio() {
-  const [showServices, setShowServices] = useState(true);
-  const [showInitiatives, setShowInitiatives] = useState(false);
+import { portfolioActions } from "../../store/portfolio";
 
-  const showServicesHandler = () => {
-    setShowInitiatives(false);
-    setShowServices(true);
+const Portfolio = () => {
+  const dispatch = useDispatch();
+
+  const portfolioServices = useSelector((state) => state.portfolio.servicesActive);
+  const portfolioInitiatives = useSelector((state) => state.portfolio.initiativesActive);
+  const portfolioResponsabilities = useSelector((state) => state.portfolio.responsabilitiesActive)
+
+  const servicesHandler = () => {
+    dispatch(portfolioActions.setServicesActive());
   };
 
-  const showInitiativesHandler = () => {
-    setShowServices(false);
-    setShowInitiatives(true);
+  const initiativesHandler = () => {
+    dispatch(portfolioActions.setInitiatiativesActive());
+  };
+
+  const responsabilitiesHandler = () => {
+    dispatch(portfolioActions.setResponsabilitiesActive());
   };
 
   return (
@@ -29,22 +37,23 @@ function Portfolio() {
       <ListView>
         <div>
           <ListHeader
-            class="portfolio-header-item"
+            class={portfolioServices ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Serviços"
-            onClick={showServicesHandler}
+            onClick={servicesHandler}
           />
           <ListHeader
-            class="portfolio-header-item"
+            class={portfolioInitiatives ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Iniciativas"
-            onClick={showInitiativesHandler}
+            onClick={initiativesHandler}
           />
           <ListHeader
             class="portfolio-header-item"
             department="Responsabilidades Sociais"
+            onClick={responsabilitiesHandler}
           />
         </div>
-        {showServices && <Services />}
-        {showInitiatives && (
+        {portfolioServices && <Services />}
+        {portfolioInitiatives && (
           <Initiatives>
             <InitiativesItem
               image="events/brainload.png"
@@ -71,6 +80,7 @@ function Portfolio() {
             />
           </Initiatives>
         )}
+        {portfolioResponsabilities && <p>Responsabilities</p>}
       </ListView>
       <Footer />
     </Animation>

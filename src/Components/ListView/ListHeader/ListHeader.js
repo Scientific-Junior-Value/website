@@ -1,6 +1,6 @@
 import './ListHeader.css';
 
-function ListHeader(props) {
+const ListHeader = (props) => {
   return (
     <div className="list-header" onClick={props.departmentClicked}>
       <span onClick={props.onClick} className={props.class}>{props.department}</span>

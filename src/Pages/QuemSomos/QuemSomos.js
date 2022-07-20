@@ -5,7 +5,7 @@ import DarkFooter from "../../Components/Footer/DarkFooter/DarkFooter";
 import Partnerships from "../../Components/Partnerships/Partnerships";
 import Animation from "../../Components/Animation/Animation";
 
-function Blog() {
+const Blog = () => {
   return (
     <Animation>
       <Background

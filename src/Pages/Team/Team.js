@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { teamActions } from "../../store/team";
 import "./Team.css";
 import Direction from "./components/Direction/Direction";
+import Mag from "./components/Mag/Mag";
 
 const Team = () => {
 
@@ -108,7 +109,7 @@ const Team = () => {
           />
         </div>
         {showDirection && <Direction />}
-        {showMag && <p>MAG</p>}
+        {showMag && <Mag />}
         {showCF && <p>Conselho Fiscal</p>}
         {showCI && <p>CI</p>}
         {showRE && <p>RE</p>}

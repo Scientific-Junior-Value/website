@@ -1,5 +1,5 @@
 .textbox-wrapper {
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
 }
 
 .textbox-wrapper textarea{
@@ -9,7 +9,6 @@
     resize: none;
     height: 12rem;
     padding: 0.7rem;
-    margin-bottom: 1rem;
 }
 
 .textbox-wrapper textarea:focus, .textbox-wrapper textarea:active {

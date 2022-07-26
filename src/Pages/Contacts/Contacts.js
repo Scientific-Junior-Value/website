@@ -4,7 +4,7 @@ import Background from '../../Components/Background/Background';
 import DarkFooter from '../../Components/Footer/DarkFooter/DarkFooter';
 import Animation from '../../Components/Animation/Animation';
 
-function Contacts() {
+const Contacts = () => {
   return (
     <Animation>
       <Background class='background' title='Contactos' desc=''/>

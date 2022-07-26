@@ -1,9 +1,9 @@
 import './TextBox.css';
 
-function TextBox(props) {
+const TextBox = (props) => {
     return (
         <div className='textbox-wrapper'>
-            <textarea placeholder={props.placeholder + '*'}></textarea>
+            <textarea key={props.placeholder} value={props.value} onInput={props.onInput} placeholder={props.placeholder + '*'}></textarea>
         </div>
     );
 }

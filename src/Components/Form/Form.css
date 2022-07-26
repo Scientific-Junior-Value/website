@@ -3,6 +3,17 @@
     padding: 0.3rem;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-left: 0.5rem;
+}
+
+.error-message.block {
+    display: block;
+    margin-bottom: 1rem;
+}
+
 .form {
     width: 100%;
     padding: 0rem 9rem 10rem 0rem;

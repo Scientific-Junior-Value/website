@@ -1,9 +1,9 @@
 import './Button.css';
 
-function Button() {
+const Button = (props) => {
   return (
     <div className='button-wrapper'>
-        <button className='button'>
+        <button type={props.type} className='button' onClick={props.onClick}>
             Enviar
         </button>
     </div>

@@ -3,7 +3,7 @@ import './Input.css';
 function Input(props) {
     return (
         <div className='input-wrapper'>
-            <input type='text' placeholder={props.placeholder + '*'}/>  
+            <input key={props.placeholder} type='text' value={props.value} placeholder={props.placeholder + '*'} onInput={props.onInput} />  
         </div>
     );
 }

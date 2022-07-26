@@ -14,6 +14,7 @@ import RE from "./components/RE/RE";
 import RC from "./components/RC/RC";
 import RH from "./components/RH/RH";
 import CF from "./components/CF/CF";
+import Alumni from "./components/Alumni/Alumni";
 
 const Team = () => {
 
@@ -120,7 +121,7 @@ const Team = () => {
         {showRE && <RE />}
         {showRC && <RC />}
         {showRH && <RH />}
-        {showAlumni && <p>Alumni</p>}
+        {showAlumni && <Alumni />}
       </ListView>
       <Footer />
     </Animation>

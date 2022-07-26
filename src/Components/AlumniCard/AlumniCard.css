@@ -1,0 +1,15 @@
+.alumni-card {
+    padding: 1rem;
+    width: 26rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.alumni-text {
+    text-align: justify;
+}
+
+.alumni-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+}

@@ -24,6 +24,13 @@
     max-width: 50rem;
 }
 
+.team-content-alumni {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 57rem;
+    gap: 4rem;
+}
+
 .team-content:nth-child(1) {
     margin-top: 0;
 }

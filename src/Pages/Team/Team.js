@@ -9,6 +9,11 @@ import { teamActions } from "../../store/team";
 import "./Team.css";
 import Direction from "./components/Direction/Direction";
 import Mag from "./components/Mag/Mag";
+import CI from "./components/CI/CI";
+import RE from "./components/RE/RE";
+import RC from "./components/RC/RC";
+import RH from "./components/RH/RH";
+import CF from "./components/CF/CF";
 
 const Team = () => {
 
@@ -110,11 +115,11 @@ const Team = () => {
         </div>
         {showDirection && <Direction />}
         {showMag && <Mag />}
-        {showCF && <p>Conselho Fiscal</p>}
-        {showCI && <p>CI</p>}
-        {showRE && <p>RE</p>}
-        {showRC && <p>RC</p>}
-        {showRH && <p>RH</p>}
+        {showCF && <CF />}
+        {showCI && <CI />}
+        {showRE && <RE />}
+        {showRC && <RC />}
+        {showRH && <RH />}
         {showAlumni && <p>Alumni</p>}
       </ListView>
       <Footer />

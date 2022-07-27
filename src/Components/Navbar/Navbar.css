@@ -40,8 +40,13 @@
   object-fit: cover;
 }
 
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) {
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .navbar-dark { 
+        background-color:yellow; 
+    }
+
     .navbar-logo {
       height: 100%;
       display: flex;
@@ -54,17 +59,8 @@
     .navbar .navbar-container .navbar-logo .logo-image {
       height: 70%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     } 
-  }
-}
-
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
-
-    .navbar-dark { 
-        background-color:yellow; 
-    }
 }}
 
 .navbar-links {

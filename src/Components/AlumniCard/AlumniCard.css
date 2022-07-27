@@ -13,3 +13,9 @@
     display: flex;
     align-items: flex-end;
 }
+
+@media screen and (max-width: 1500px) { 
+    .alumni-card {
+        width: 35rem;
+    }
+}

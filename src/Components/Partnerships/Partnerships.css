@@ -1,3 +1,10 @@
+.partnership-header {
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    font-size: 1.8em;
+    color: #5FAB30;
+}
+
 .carousel {
     width: 90%;
     margin: 0 5% 5rem 5%;

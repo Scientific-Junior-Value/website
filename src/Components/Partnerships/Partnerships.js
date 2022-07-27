@@ -14,6 +14,8 @@ const Partnerships = () => {
     SwiperCore.use([Autoplay]);
 
     return (
+        <>
+        <h2 className='partnership-header'>Parcerias</h2>
         <div className='carousel'>
             <Swiper className='swiper-container'
                     autoplay={{ delay: 1600 }}
@@ -46,6 +48,7 @@ const Partnerships = () => {
             })}
             </Swiper>
         </div>
+        </>
     );
 }
 

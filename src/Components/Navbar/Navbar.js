@@ -27,7 +27,7 @@ function Navbar() {
       <nav className={dark ? 'navbar': 'navbar-dark'}>
         <div className='navbar-container'>
           <div className='navbar-logo'>
-            <img src={logo} alt='Scientific Logo'/>
+            <img className='logo-image' src={logo} alt='Scientific Logo'/>
           </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

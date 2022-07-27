@@ -10,6 +10,7 @@ const InitiativesItem = (props) => {
                     <img src={props.image}></img>
                 </div>
                 <div className="initiatives-desc">
+                    <span className="initiatives-desc-title">{props.title}</span>
                     <p>
                         {props.text}
                     </p>

@@ -3,7 +3,6 @@ import Background from "../../Components/Background/Background";
 import Footer from "../../Components/Footer/Footer";
 import ListHeader from "../../Components/ListView/ListHeader/ListHeader";
 import ListView from "../../Components/ListView/ListView";
-import { useSelector, useDispatch } from 'react-redux';
 
 import { teamActions } from "../../store/team";
 import "./Team.css";
@@ -15,50 +14,105 @@ import RC from "./components/RC/RC";
 import RH from "./components/RH/RH";
 import CF from "./components/CF/CF";
 import Alumni from "./components/Alumni/Alumni";
+import { useState } from "react";
 
 const Team = () => {
 
-  const dispatch = useDispatch();
-
-  const showDirection = useSelector((state) => state.team.directionActive);
-  const showMag = useSelector((state) => state.team.magActive);
-  const showCF = useSelector((state) => state.team.cfActive);
-  const showCI = useSelector((state) => state.team.ciActive);
-  const showRC = useSelector((state) => state.team.rcActive);
-  const showRE = useSelector((state) => state.team.reActive);
-  const showRH = useSelector((state) => state.team.rhActive);
-  const showAlumni = useSelector((state) => state.team.alumniActive);
+  const [showDirection, setShowDirection] = useState(true);
+  const [showMag, setShowMag] = useState(false);
+  const [showCF, setShowCF] = useState(false);
+  const [showCI, setShowCI] = useState(false);
+  const [showRC, setShowRC] = useState(false);
+  const [showRE, setShowRE] = useState(false);
+  const [showRH, setShowRH] = useState(false);
+  const [showAlumni, setShowAlumni] = useState(false);
 
   const directionHandler = () => {
-    dispatch(teamActions.setDirectionActive());
+    setShowDirection(true);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(false);
   };
 
   const magHandler = () => {
-    dispatch(teamActions.setMagActive());
+    setShowDirection(false);
+    setShowMag(true);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(false);
   };
 
   const cfHandler = () => {
-    dispatch(teamActions.setCFActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(true);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(false);
   };
 
   const ciHandler = () => {
-    dispatch(teamActions.setCIActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(true);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(false);
   };
 
   const rcActive = () => {
-    dispatch(teamActions.setRCActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(true);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(false);
   }
 
   const reActive = () => {
-    dispatch(teamActions.setREActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(true);
+    setShowRH(false);
+    setShowAlumni(false);
   }
 
   const rhActive = () => {
-    dispatch(teamActions.setRHActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(true);
+    setShowAlumni(false);
   }
 
   const alumniActive = () => {
-    dispatch(teamActions.setAlumniActive());
+    setShowDirection(false);
+    setShowMag(false);
+    setShowCF(false);
+    setShowCI(false);
+    setShowRC(false);
+    setShowRE(false);
+    setShowRH(false);
+    setShowAlumni(true);
   }
 
   return (

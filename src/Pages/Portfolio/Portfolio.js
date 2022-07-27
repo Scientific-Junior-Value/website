@@ -7,27 +7,30 @@ import Initiatives from "./Components/Initiatives";
 import InitiativesItem from "./Components/InitiativesItem";
 import Footer from '../../Components/Footer/Footer';
 import Animation from "../../Components/Animation/Animation";
-import { useSelector, useDispatch } from 'react-redux';
-
-import { portfolioActions } from "../../store/portfolio";
+import { useState } from "react";
 
 const Portfolio = () => {
-  const dispatch = useDispatch();
 
-  const portfolioServices = useSelector((state) => state.portfolio.servicesActive);
-  const portfolioInitiatives = useSelector((state) => state.portfolio.initiativesActive);
-  const portfolioResponsabilities = useSelector((state) => state.portfolio.responsabilitiesActive)
+  const [services, setServices] = useState(true);
+  const [initiatives, setInitiatives] = useState(false);
+  const [responsabilities, setResponsabilities] = useState(false);
 
   const servicesHandler = () => {
-    dispatch(portfolioActions.setServicesActive());
+    setServices(true);
+    setInitiatives(false);
+    setResponsabilities(false);
   };
 
   const initiativesHandler = () => {
-    dispatch(portfolioActions.setInitiatiativesActive());
+    setServices(false);
+    setInitiatives(true);
+    setResponsabilities(false);
   };
 
   const responsabilitiesHandler = () => {
-    dispatch(portfolioActions.setResponsabilitiesActive());
+    setServices(false);
+    setInitiatives(false);
+    setResponsabilities(true);
   };
 
   return (
@@ -36,23 +39,23 @@ const Portfolio = () => {
       <ListView>
         <div>
           <ListHeader
-            class={portfolioServices ? "portfolio-header-item active" : "portfolio-header-item"}
+            class={services ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Serviços"
             onClick={servicesHandler}
           />
           <ListHeader
-            class={portfolioInitiatives ? "portfolio-header-item active" : "portfolio-header-item"}
+            class={initiatives ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Iniciativas"
             onClick={initiativesHandler}
           />
           <ListHeader
-            class={portfolioResponsabilities ? "portfolio-header-item active" : "portfolio-header-item"}
+            class={responsabilities ? "portfolio-header-item active" : "portfolio-header-item"}
             department="Responsabilidades Sociais"
             onClick={responsabilitiesHandler}
           />
         </div>
-        {portfolioServices && <Services />}
-        {portfolioInitiatives && (
+        {services && <Services />}
+        {initiatives && (
           <Initiatives>
             <InitiativesItem
               image="events/brainload.png"
@@ -79,7 +82,7 @@ const Portfolio = () => {
             />
           </Initiatives>
         )}
-        {portfolioResponsabilities && <p>Responsabilities</p>}
+        {responsabilities && <p>Responsabilities</p>}
       </ListView>
       <Footer />
     </Animation>
